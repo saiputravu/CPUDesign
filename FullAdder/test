@@ -1,0 +1,31 @@
+iverilog -o adder.vvp *.v
+vvp adder.vvp -vcd
+** VVP Stop(0) **
+** Flushing output streams.
+** Current simulation time is 5 ticks.
+> iverilog -o adder.vvp *.v
+Unknown command: iverilog
+Try the help command to get a summary
+of available commands.
+> adder_tb.v:18: syntax error
+Unknown command: adder_tb.v:18:
+Try the help command to get a summary
+of available commands.
+> adder_tb.v:18: error: invalid module item.
+Unknown command: adder_tb.v:18:
+Try the help command to get a summary
+of available commands.
+> adder_tb.v:19: syntax error
+Unknown command: adder_tb.v:19:
+Try the help command to get a summary
+of available commands.
+> adder_tb.v:19: error: invalid module item.
+Unknown command: adder_tb.v:19:
+Try the help command to get a summary
+of available commands.
+> make: *** [Makefile:7: compile] Error 4
+Unknown command: make:
+Try the help command to get a summary
+of available commands.
+> ** Continue **
+VCD info: dumpfile dump.vcd opened for output.
