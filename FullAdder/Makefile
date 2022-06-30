@@ -1,7 +1,12 @@
-INPUT_VERILOG 	= *.v
-VVP    			= adder.vvp
+TOP_MODULE		= full_adder
+TESTBENCH 		= $(TOP_MODULE)_tb.v
 
-all: compile run waveform
+INPUT_VERILOG 	= adder.v
+INPUT_VERILOG  += $(TOP_MODULE).v $(TESTBENCH)
+
+VVP    			= $(TOP_MODULE).vvp
+
+all: clean compile run waveform
 
 compile:
 	iverilog -o $(VVP) $(INPUT_VERILOG)
