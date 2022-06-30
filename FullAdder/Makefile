@@ -1,7 +1,7 @@
-TOP_MODULE		= full_adder
+TOP_MODULE		= two_bit_full_adder
 TESTBENCH 		= $(TOP_MODULE)_tb.v
 
-INPUT_VERILOG 	= adder.v
+INPUT_VERILOG 	= adder.v full_adder.v
 INPUT_VERILOG  += $(TOP_MODULE).v $(TESTBENCH)
 
 VVP    			= $(TOP_MODULE).vvp
